@@ -115,7 +115,7 @@ Example:
        */
       initOptions: {
         type: Object,
-        value() { return {} },
+        value: function() { return {} },
       },
 
       /**
@@ -124,7 +124,7 @@ Example:
        */
       protectedInitOptions: {
         type: Array,
-        value() { return ['selector', 'setup'] },
+        value: function() { return ['selector', 'setup'] },
       },
 
       _textareaId: {
@@ -220,7 +220,7 @@ Example:
       tinymce.init(options);
     },
 
-    _updateValue() {
+    _updateValue: function() {
       this.getContent();
     },
 
